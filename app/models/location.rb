@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Location model
 class Location < ActiveRecord::Base
   belongs_to :region
   has_many :people
