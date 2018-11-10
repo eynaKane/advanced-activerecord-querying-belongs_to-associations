@@ -2,8 +2,12 @@ language: ruby
 rvm:
  - 2.3.0
 
-script: 
+script:
+ - bin/setup
  - bundle exec rubocop 
+
+services:
+ - postgresql
 
 notifications:
   email:
